@@ -11,3 +11,12 @@ spring:
    naming:
     physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
   ddl-auto: update
+  
+eureka:
+ client:
+  register-with-eureka: true
+  fetch-registry: true
+  service-url:
+   defaultZone: http://10.101.30.6:8716/eureka/
+  instance: 
+   ostname: auth_service
